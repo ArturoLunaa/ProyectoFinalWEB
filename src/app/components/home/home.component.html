@@ -1,0 +1,36 @@
+  <section class="py-xxl-10 pb-0" id="home">
+    <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/hero-bg.png);background-position:top center;background-size:cover;">
+    </div>
+
+    <div class="container">
+      <div class="row min-vh-xl-100 min-vh-xxl-25">
+        <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100 rounded-pill" src="https://sersaludables.org/wp-content/uploads/2019/04/diadelasalud_001-750x450.jpg?is-pending-load=1" alt="hero-header" /></div>
+        <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
+          <h1 class="fw-light font-base fs-6 fs-xxl-7">Salud y Bienestar para <strong>una mejor vida </strong></h1>
+          <p class="fs-1 mb-5">Garantizar una vida sana y promover el bienestar de todos a todas las edades es importante para la construcción de sociedades prósperas. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section>
+    <div class="bg-holder bg-size" style="background-image:url(./assets/img/fondo.png);background-position:top center;background-size:cover;">
+    </div>
+    <!--/.bg-holder-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col mb-4" *ngFor="let item of Articulos">
+          <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="{{item.image}}" alt="news" />
+            <div class="card-body">
+              <p>
+                {{item.content.slice(0, 50)}}...
+              </p>
+              <h5 class="font-base fs-lg-0 fs-xl-1 my-3">{{item.title}}</h5><a class="stretched-link" routerLink="{{item.ruta}}">Leer articulo completo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

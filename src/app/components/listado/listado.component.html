@@ -1,0 +1,28 @@
+<section>
+
+  <div class="row justify-content-center" routerLink="/listado">
+    <div class="col-auto">
+        <table class="table table-xl table-light">
+            <thead>
+              <tr>
+                <th scope="col fs-2">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Ingreso</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let persona of data">
+                    <td class='table-primary'>{{persona.Nombre}}</td>
+                    <td class='table-primary'>{{persona.Apellido}}</td>
+                    <td class='table-primary'>{{persona.Edad}}</td>
+                    <td class='table-primary'>{{persona.Cargo}}</td>
+                    <td class='table-primary'>{{persona.ingreso}}</td>
+                </tr>
+            </tbody>
+          </table>
+        
+    </div>
+  </div>
+</section>
